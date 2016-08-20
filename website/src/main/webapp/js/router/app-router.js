@@ -1,4 +1,4 @@
-define(['backbone', 'view/about-view', 'view/samples-view'],
+define(['backbone', 'view/about-view', 'view/samples-view', 'view/links-view'],
 function (Backbone, AboutView, SamplesView) {
 
     var AppRouter = Backbone.Router.extend({
@@ -23,7 +23,7 @@ function (Backbone, AboutView, SamplesView) {
         links:function () {
             new LinksView({ root: $('#main') });
         }
-       
+
     });
 
     return AppRouter;
