@@ -6,9 +6,12 @@ function (Backbone, Resthub, untiltedTemplate) {
         // Define view template
         template: untiltedTemplate,
 
-        initialize:function () {
-            // Render the view
-            this.render();
+        initialize: function() {
+        	this.render();
+        },
+
+        render: function() {
+        	this.$el.html(this.template());
         }
 
     });
