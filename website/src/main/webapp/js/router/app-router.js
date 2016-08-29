@@ -8,23 +8,23 @@ define(['backbone', 'view/about-view', 'view/untilted-view', 'view/samples-view'
 		},
 
 		routes:{
-			'': 'homeV',
-			'home': 'homeV',
-			'untilted':'untiltedV',
-			'links': 'linksV',
-			'about': 'aboutV'
+			'': 'home',
+			'home': 'home',
+			'untilted':'untilted',
+			'links': 'links',
+			'about': 'about'
 		},
 
-		homeV:function () {
+		home:function () {
 			new SamplesView({ root: $('#main') });
 		},
-		untiltedV:function () {
+		untilted:function () {
 			new UntiltedView({ root: $('#main') });
 		},
-		linksV:function () {
+		links:function () {
 			new LinksView({ root: $('#main') });
 		},
-		aboutV:function () {
+		about:function () {
 			new AboutView({ root: $('#main') });
 		}
 
