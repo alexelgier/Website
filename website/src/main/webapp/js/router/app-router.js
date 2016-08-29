@@ -4,15 +4,15 @@ define(['backbone', 'view/about-view', 'view/untilted-view', 'view/samples-view'
 	var AppRouter = Backbone.Router.extend({
 
 		initialize: function() {
-			Backbone.history.start({ pushState: true, root: "/" });
+			Backbone.history.start({ pushState: false, root: "/" });
 		},
 
 		routes:{
-			'': 'home',
-			'home': 'home',
-			'untilted':'untilted',
-			'links': 'links',
-			'about': 'about'
+			"": "home",
+			"!/home": "home",
+			"!/untilted":"untilted",
+			"!/links": "links",
+			"!/about": "about"
 		},
 
 		home:function () {
